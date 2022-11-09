@@ -4,27 +4,32 @@ print(Poem)
 
 print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
 
+print(\n)
+
 import sys
 print('python version')
 print(sys.version)
 print('version info.')
 print(sys.version_info)
 
-import datetime
-now = datetime.datetime.now()
-print ("Current date and time : ")
-print (now.strftime("%Y-%m-%d %H:%M:%S"))
+print(\n)
+
 import datetime
 time = datetime.datetime.now()
 print('currect date and time: ')
-print(time.strftime('%Y-%m-%d %H-%M-%S'))
+print(time.strftime('%Y-%m-%d \n %H-%M-%S'))
+
+print(\n)
 
 from math import pi
+
 def Area(r):
     r= float(input('radius:))
     area = r * pi
     print(area)
 Area(6)
+
+print(\n)
 
 from math import pi
 r = float(input ("Input the radius of the circle : "))
@@ -44,11 +49,6 @@ Area()
 
 print('\n\t')
 
-import datetime
-time = datetime.datetime.now()
-print('currect date and time: ')
-print(time.strftime('%Y-%m-%d %H-%M-%S'))
-
 #4. Write a Python program which accepts the radius of a circle from the user and compute the area. Go to the editor
 # Sample Output :
 # r = 1.1
@@ -59,7 +59,6 @@ from math import pi
 def Circle_Area():
     Area = pi * (radius**2)
     return Area
-
 
 radius = float(input('Radius: '))
 print(Circle_Area())
@@ -102,16 +101,25 @@ def generate():
 
 
 generate()
-
+#OR
+print('\n')
 
 values = input('Input some integer: ')
-list = values.split(',')
+List = values.split(',')
+LIst = list(List)
 tuple = tuple(list)
-print('list: ',list)
+print('list: ',List)
 print('tuple: ',tuple)
+#OR
+print('\n')
+values = (input('Using "," to separate integer\nInput some integer : '))
+List = values.split(',')
+LisT = list(List)
+tuple = tuple(List)
+print('List: ',LisT)
+print('Tuple: ',tuple)
 
-'''
-
+print('\n')
 
 #7. Write a Python program to accept a filename from the user 
 # and print the extension of that.
@@ -144,4 +152,107 @@ split_tup = os.path.splitext(filename)
 File_extenstion = filename.split('.')
 print('File Extenstion: ', File_extenstion[1])
 
-import pathlib
+
+
+#8. Write a Python program to display the first and last colors 
+# from the following list. 
+# color_list = ["Red","Green","White" ,"Black"]
+
+color_list = ["Red","Green","White" ,"Black"]
+print(color_list[0], color_list[-1] )
+
+import os 
+ 
+# Executing a shell command 
+# os.system()     
+ 
+# Get the users environment 
+# os.environ()    
+ 
+# Returns the current working directory. 
+# os.getcwd()    
+ 
+# Return the real group id of the current     process. 
+# os.getgid()        
+ 
+# Return the current process’s user id. 
+# os.getuid()     
+ 
+# Returns the real process ID of the current process. 
+# os.getpid()      
+ 
+# Set the current numeric umask and return the previous umask. 
+# os.umask(mask)    
+ 
+# Return information identifying the current operating system. 
+# os.uname()      
+ 
+# Change the root directory of the current process to path. 
+# os.chroot(path)    
+ 
+# Return a list of the entries in the directory given by path. 
+# os.listdir(path)  
+ 
+#Create a directory named path with numeric mode mode. 
+# os.mkdir(path)     
+ 
+# Recursive directory creation function. 
+# os.makedirs(path)   
+ 
+# Remove (delete) the file path. 
+# os.remove(path)     
+ 
+# Remove directories recursively. 
+# os.removedirs(path)  
+ 
+# Rename the file or directory src to dst. 
+# os.rename(src, dst)   
+
+# Remove (delete) the directory path. 
+# os.rmdir(path) 
+
+#The % operator in python for strings is used for 
+# something called string substitution.
+# String and Unicode objects have one unique 
+# built-in operation: the % operator (modulo).
+
+#Usage
+#'d' Signed integer decimal.
+#'i' Signed integer decimal.
+#'o' Signed octal value. (1)
+#'u' Obsolete type – it is identical to 'd'. (7)
+#'x' Signed hexadecimal (lowercase). (2)
+#'X' Signed hexadecimal (uppercase). (2)
+#'e' Floating point exponential format (lowercase). (3)
+#'E' Floating point exponential format (uppercase). (3)
+#'f' Floating point decimal format. (3)
+#'F' Floating point decimal format. (3)
+#'g' Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise. (4)
+#'G' Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise. (4)
+#'c' Single character (accepts integer or single character string).
+#'r' String (converts any Python object using repr()). (5)
+#'s' String (converts any Python object using str()). (6)
+#'%' No argument is converted, results in a '%' character in the result.
+
+#9. Write a Python program to display the examination schedule. 
+# (extract the date from exam_st_date). 
+# exam_st_date = (11, 12, 2014)
+# Sample Output : The examination will start from : 11 / 12 / 2014
+
+exam_st_date = (11, 12, 2014)
+print( 'The examination will start from : %i / %i / %i'%exam_st_date)
+print((exam_st_date))
+
+print('\n')
+#OR
+exam_st_date =(11, 12, 2014)
+print(f'The examination will start from :') 
+print(f'\t{exam_st_date[0]} / {exam_st_date[1]} / {exam_st_date[2]}')
+
+print('\n')
+#OR
+exam_st_date = (11,12,2014)
+print("The examination will start of exam is: ",end="")
+print(exam_st_date[0], exam_st_date[1], exam_st_date[2], sep=" / ")
+
+'''
