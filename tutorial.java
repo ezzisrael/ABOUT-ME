@@ -31,5 +31,20 @@ public class Main {
         Point point2 = point1;
         point1.x = 2;
         System.out.println(point2);
+        
+        //Write a Java program to print 'Hello' on screen and then print your name on a separate line.
+        import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner input = new Scanner (System.in);
+        System.out.println("Input you first name: ");
+        String fname = input.next();
+        System.out.println("Input your last name: ");
+        String lname = input.next();
+        System.out.println();
+        System.out.println("Hello \n"+fname+" "+lname);
+    }
+}
     }
 }
