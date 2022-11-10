@@ -255,4 +255,54 @@ exam_st_date = (11,12,2014)
 print("The examination will start of exam is: ",end="")
 print(exam_st_date[0], exam_st_date[1], exam_st_date[2], sep=" / ")
 
+
+print('\n')
+from datetime import date
+
+print("Enter the first date please: ")
+fd = date(int(input("\t\t\tYear: ")), int(input("\t\t\tmonth: ")), int(input("\t\t\tday: ")))
+print("Enter the second date please: ")
+ld = date(int(input("\t\t\tYear: ")), int(input("\t\t\tmonth: ")), int(input("\t\t\tday: ")))
+delta = ld - fd
+print("Total diffrences : ",delta.days,"days")
+
+print('\n')
+
+#11. Write a Python program to print the documents 
+# (syntax, description etc.) of Python built-in function(s).
+#Sample function : abs()
+#Expected Result :
+#abs(number) -> number
+#Return the absolute value of the argument.
+
+print(abs.__doc__)
+print('\n')
+
+#12. Write a Python program to print the calendar
+#  of a given month and year.
+# Note : Use 'calendar' module.
+
+import calendar
+year = int(input('enter year: '))
+month = int(input('Enter month: '))
+print(calendar.month(year,month))
+
+#13. Write a Python program to print the following 'here document'.
+#Sample string :
+#a string that you "don't" have to escape
+#This
+#is a ....... multi-line
+# heredoc string --------> example
+
+print('''
+a string that you 'don't' have to escape
+This
+is a ....... multi-line
+heredoc string --------> example
+''')
+
+#14. Write a Python program to calculate number of days between two dates.
+#Sample dates : (2014, 7, 2), (2014, 7, 11)
+#Expected output : 9 days
+
 '''
