@@ -301,6 +301,34 @@ is a ....... multi-line
 heredoc string --------> example
 ''')
 
+#exampe
+import datetime
+
+tday = datetime.date.today()
+print(tday)
+print(tday.year)
+print(tday.weekday())
+#for weekday monday = 0, sunday = 6
+print(tday.isoweekday())
+#for isoweekday monday = 1, sunday = 7
+
+print('\n')
+tdelta = datetime.timedelta(days=7)
+#time delta is the difference between two dates or time.
+#here a time delta is create one week ahead.
+print(tday + tdelta)
+#could be subtracted too to fine old dates
+print(tday - tdelta)
+
+bday = datetime.date(2022, 11, 21)
+
+till_bday = bday - tday
+print(till_bday.total_seconds())
+
+print(till_bday.total_hours())
+
+
+
 #14. Write a Python program to calculate number of days between two dates.
 #Sample dates : (2014, 7, 2), (2014, 7, 11)
 #Expected output : 9 days
