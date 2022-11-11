@@ -333,4 +333,27 @@ print(till_bday.total_hours())
 #Sample dates : (2014, 7, 2), (2014, 7, 11)
 #Expected output : 9 days
 
+myLIst = ['f', 'e', 'r', 'y']
+
+for values in myLIst:
+    if values == 'e':
+        pass
+print(myLIst)
+
+try:
+    x = int(input('Input an integer: '))
+    print(x)
+except:
+    print('Something went wrong..... Please try again.')
+else:
+    print('Nothing Went wrong: ')
+
+try:
+    y = int(input('Input an integer: '))
+    print(y)
+except(ValueError):
+    print('Value Error....please enter correct VALUE')
+finally:
+    print('Try except finished') 
+
 '''
