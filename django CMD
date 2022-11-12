@@ -1,2 +1,5 @@
-install django(....)
-install virtualenvwrapper-win
+#this is to install django
+>>> pip install django(........)
+>>> pip virtualenvwrapper-win
+>>> djangoadmin-startproject-myproject
+>>> python manager.py startapp myapp
