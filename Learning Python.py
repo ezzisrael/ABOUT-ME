@@ -1,9 +1,16 @@
-'''
+
 Poem = 'Twinkle, twinkle, little, star, \n      How I wonder what you are! \n       Up above the world so high, \n       Like a diamonnd in the sky. \n Twinkle  twinkle, little star, \n        How I wonder what you are'
 print(Poem)
 
 print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
-
+poem = ('''
+Twinkle, twinkle, little, star,
+    How I wonder what you are!
+        upr above the world so high,
+        like a diamond in the sky.
+Twinkle, twinkle, little star
+how i wonder what you are.
+''')
 print(\n)
 
 import sys
@@ -381,4 +388,3 @@ def volumeSphere(Svolume):
 
 radius = float(input("radius of sphere: "))
 print('Volume Of Sphere = ', volumeSphere(radius))
-'''
