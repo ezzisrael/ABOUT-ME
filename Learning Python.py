@@ -11,6 +11,8 @@ Twinkle, twinkle, little, star,
 Twinkle, twinkle, little star
 how i wonder what you are.
 ''')
+print(poem)
+
 print(\n)
 
 import sys
