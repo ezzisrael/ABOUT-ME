@@ -69,6 +69,13 @@ root=Tk()
 root.title('simple Calculator')
 root.geometry('500x600+100+200')
 root.resizable(0,0)
+#for root image or ICON.
+#root.iconphoto(False, PhotoImage(file=" Here you enter or paste the icon file.path of file name if in the same location(folder) with the code.)
+#prefeable a 16x16(icon size) .png(file extension) file.
+#sample....
+#root.iconphoto(False, PhotoImage(file=PhotoImage(file='C:/Users/JAY/Music/Basic calcu/Icon/icons8.png'))
+#oR
+#root.iconphoto(False, PhotoImage(file=(icon8.png))
 root.configure(bg='#17161b')
 
 equation=""
